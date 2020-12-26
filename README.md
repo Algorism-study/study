@@ -22,4 +22,4 @@ git init
 git add .        
 git commit -m "test1"        
 git push origin 알고리즘기초/TEST           
-*항상 브런치 확인후 push 하기*              
+*항상 브런치 확인후 push 하기*                         
