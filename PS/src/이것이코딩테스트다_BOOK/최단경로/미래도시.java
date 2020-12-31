@@ -42,13 +42,9 @@ public class 미래도시 {
 
     private static void floyd(int[][] graph) {
         int size= graph.length;
-        for(int start=1;start<size;start++){
-            for(int target=1;target<size;target++){
-                if(start==target)
-                    continue;
-                for(int mid=1;mid<size;mid++){
-                    if(start==mid||target==mid)
-                        continue;
+        for(int mid=1;mid<size;mid++){
+            for(int start=1;start<size;start++){
+                for(int target=1;target<size;target++){
                     graph[start][target]=Math.min(graph[start][target],graph[start][mid]+graph[mid][target]);
                 }
             }
