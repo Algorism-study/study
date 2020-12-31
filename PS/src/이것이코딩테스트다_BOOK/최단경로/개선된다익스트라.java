@@ -11,6 +11,7 @@ import java.util.StringTokenizer;
 /**
  * 개선된 다익스트라는 거리가 최소가 되어서 변경될때만 Q에 삽입하기 때문에
  * 방문배열에 필요없다. 이미 한번 방문되었으면 다시 돌아가지 않는다.
+ * 시간복잡도는 O(ElogV)이다.
  */
 public class 개선된다익스트라 {
     static int distance[];
